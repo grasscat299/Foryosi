@@ -14,11 +14,16 @@
     </head>
     <body>
         <input type="button" id="test" value="test">
-        <div id="cvsarea" width="500">
-            <!--canvas style="border: 1px solid;" id="tmcanvas" width="960" height="250" oncontextmenu="return false;"></canvas-->
-            marumarumarumarumarumarumaurmarumarumarumarumarumarumarumarumarumarumaru
-        </div>
+        <!--div id="cvsarea" width="500">
+            <!--canvas style="border: 1px solid;" id="tmcanvas" width="960" height="250" oncontextmenu="return false;"></canvas>
+        </div-->
+        <canvas style="border: 1px solid;" id="tmcanvas" width="500" height="500" oncontextmenu="return false;"></canvas>
     </body>
 </html>
 <script>
+    let cvs = document.getELementById( "tmcanvas" ).getContext( "2d" );
+    $( "#tmcanvas" ).on( "touchmove", function(e){
+        cvs.fillRect( e.offsetX-2.5, e.offsetY-2.5, 5, 5 );
+    },
+    false );
 </script>
