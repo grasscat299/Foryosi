@@ -33,11 +33,11 @@
 <script>
     function scrollstart(){
         console.log( "start" );
-        cvsarea.removeEventListener( "wheel", noscroll, { passive: false } );
+        cvsarea.removeEventListener( "touchmove", noscroll, { passive: false } );
     }
     function scrollstop(){
         console.log( "stop" );
-        cvsarea.addEventListener( "wheel", noscroll, { passive: false } );
+        cvsarea.addEventListener( "touchmove", noscroll, { passive: false } );
     }
     function noscroll( e ){
         e.preventDefault();
