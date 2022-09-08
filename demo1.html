@@ -27,5 +27,11 @@
             $( "#cvsarea" ).append( "block" );
         },
         false );
+        
+        $( "#cvsarea" ).on( "wheel",
+        function( e ){
+            console.log( "wheel" )
+        },
+        false );
     })
 </script>
