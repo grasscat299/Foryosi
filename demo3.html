@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            div{
+                width: 300px;
+                overflow-x: scroll;
+                border: solid 1px;
+                -ms-overflow-style: none;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="button" id="btn0" value="停止" onclick="scrollstop()">
+        <input type="button" id="btn1" value="開始" onclick="scrollstart()">
+ 
+       <div id="cvsarea" width="500" >
+            <canvas style="border: 1px solid;" id="cvs" width="960" height="250" oncontextmenu="return false;"></canvas>
+        </div>
+        <div id="maru">
+            <script>
+                for( let a = 0; a < 100; a ++ ){
+                    $( "#maru" ).append( "maru<br>" );
+                }
+            </script>
+        </div>
+        
+    </body>
+</html>
+<script>
+    function scrollstart(){
+        console.log( "start" );
+        cvsarea.removeEventListener( "wheel", noscroll, { passive: false } );
+    }
+    function scrollstop(){
+        console.log( "stop" );
+        cvsarea.addEventListener( "wheel", noscroll, { passive: false } );
+    }
+    function noscroll( e ){
+        e.preventDefault();
+        console.log( "block" );
+        
+    }
+
+    $( function(){
+        /*
+        $( "#cvsarea" ).on( "touchmove",
+        function(e){
+            e.preventDefault();
+            $( "#cvsarea" ).append( "block" );
+        },
+        false );
+        
+        $( "div" ).on( "wheel",
+        function( e ){
+            console.log( "wheel" )
+        },
+        false );*/
+
+        
+    })
+    let cvsarea = document.getElementById( "cvsarea" );
+    let cvs = document.getElementById( "cvs" ).getContext( "2d" );
+    cvs.fillRect( 50,50, 100, 100 );
+    
+
+</script>
