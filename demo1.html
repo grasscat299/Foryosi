@@ -21,9 +21,30 @@
     </body>
 </html>
 <script>
+    let g = "n";
     let cvs = document.getElementById( "tmcanvas" ).getContext( "2d" );
-    $( "#tmcanvas" ).on( "touchmove", function(e){
-        cvs.fillRect( e.offsetX-2.5, e.offsetY-2.5, 5, 5 );
-    },
-    false );
+    $( function(){
+        
+        $( "#tmcanvas" ).on( "touchmove", function(e){
+            cvs.fillRect( e.offsetX-2.5, e.offsetY-2.5, 5, 5 );
+        });
+        
+        $( "#tmcanvas" ).on( "mousemove", function(e){
+            if( g == "d" ){
+                console.log( "drow" );
+                cvs.fillRect( e.offsetX-2.5, e.offsetY-2.5, 5, 5 );
+            }
+        });
+        
+        $( "#tmcanvas" ).on( "mousedown", function(){
+            console.log( "mousedown" );
+            g = "d";
+        });
+        
+        $( "#tmcanvas" ).on( "mouseup", function(){
+            console.log( "mouseup" );
+            g = "n";
+        });
+    })
+    
 </script>
