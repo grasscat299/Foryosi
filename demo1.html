@@ -21,7 +21,7 @@
     </body>
 </html>
 <script>
-    let cvs = document.getELementById( "tmcanvas" ).getContext( "2d" );
+    let cvs = document.getEementById( "tmcanvas" ).getContext( "2d" );
     $( "#tmcanvas" ).on( "touchmove", function(e){
         cvs.fillRect( e.offsetX-2.5, e.offsetY-2.5, 5, 5 );
     },
