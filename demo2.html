@@ -24,7 +24,7 @@
 
     let tmcanvas = document.getElementById( "tmcanvas" );
     tmcanvas.addEventListener( "touchmove", function(e){
-        $("body").append( "maru" );
+        $("body").append( event.changedTouches[0].clientX"<br>" );
     });
 
     tmcanvas.addEventListener( "mousedown", function(){
