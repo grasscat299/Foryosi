@@ -13,7 +13,6 @@
         </style>
     </head>
     <body>
-        <input type="button" id="test" value="test">
         <!--div id="cvsarea" width="500">
             <!--canvas style="border: 1px solid;" id="tmcanvas" width="960" height="250" oncontextmenu="return false;"></canvas>
         </div-->
@@ -26,7 +25,7 @@
     $( function(){
         
         $( "#tmcanvas" ).on( "touchmove", function(e){
-            cvs.fillRect( e.offsetX-2.5, e.offsetY-2.5, 5, 5 );
+            cvs.fillRect( event.changedTouches[0].pageX-2.5-8, event.changedTouches[0].pageY-2.5-8, 5, 5 );
         });
         
         $( "#tmcanvas" ).on( "mousemove", function(e){
