@@ -17,7 +17,7 @@ function page(){
     $( "#tm" ).css( {"width":wi} );
     wh = wi/116*16;
     wx = (wi-wh)/16;
-    wy = document.documentElement.clientHeight/5;
+    wy = window.innerHeight/5;
     $( "#tm" ).css( {"height":wy*2} );
     bh = wh/2;
     hh = wy*2 - bh*2;
