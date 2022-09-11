@@ -2,6 +2,7 @@ function page(){
     console.log( "zoom", window.visualViewport.scale );
     console.log( "transform", $( "#btn5" ).css( "transform" ) );
     console.log( "zoom", $( "body" ).css( "zoom" ) );
+    console.log( "y", document.documentElement.clientHeight );
     //$( "body" ).css( { "width": document.body.clientWidth, "height" : document.documentElement.clientHeight } );
     $( "body" ).css( { "width": screen.width, "height" : screen.height } );
     //$( "body" )[0].width = screen.width;
@@ -16,7 +17,7 @@ function page(){
     $( "#tm" ).css( {"width":wi} );
     wh = wi/116*16;
     wx = (wi-wh)/16;
-    wy = wx*8;
+    wy = document.documentElement.clientHeight/5;
     $( "#tm" ).css( {"height":wy*2} );
     bh = wh/2;
     hh = wy*2 - bh*2;
