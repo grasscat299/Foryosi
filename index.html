@@ -9,14 +9,15 @@
         <input type="button" value="実行" id="btn" onclick="mc()">
         <br>
         <script>
-            for( let a = 0; a < 100; a ++ ){
+            let syori = 500;
+            for( let a = 0; a < syori; a ++ ){
                 document.write( "<span id = "+a+"></span><br>" );
             }
             function mc(){
                 let b = document.getElementById( "i" ).value;
                 console.log( "mc" );
                 
-                for( let a = 0; a < 100; a ++ ){
+                for( let a = 0; a < syori; a ++ ){
                     let c = document.getElementById( a );
                     c.innerText = "";
                     if( b != 1 ){
