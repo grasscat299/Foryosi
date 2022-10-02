@@ -17,7 +17,7 @@ function page(){
     $( "#tm" ).css( {"width":wi} );
     wh = wi/116*16;
     wx = (wi-wh)/16;
-    wy = window.innerHeight/5;
+    wy = document.documentElement.clientHeight/5;
     $( "#tm" ).css( {"height":wy*2} );
     bh = wh/2;
     hh = wy*2 - bh*2;
@@ -49,7 +49,7 @@ function page(){
     $( "#pm" ).css( {"width":screen.width, "height":screen.height-wx*2-wy*2-wx } );
     $( "#pm" ).css( "top",wx*3+wy*2 );
     homemenu.style.width = wi/3+"px";
-    homemenu.style.height = window.innerHeight+"px";
+    homemenu.style.height = document.documentElement.clientHeight+"px";
 
     btn9 = $( "#btn9" )[0];
 
