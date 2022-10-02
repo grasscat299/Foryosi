@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <p>windowsize一覧</p>
+        <script>
+            $( "body" ).append( "a2:"+screen.height+"\n" );
+            $( "body" ).append( "b2:"+screen.availHeight+"\n" );
+            $( "body" ).append( "c2:"+window.innerHeight+"\n" );
+            $( "body" ).append( "d2:"+window.outerHeight+"\n" );
+            $( "body" ).append( "e2:"+document.body.clientHeight+"\n" );
+            $( "body" ).append( "f2:"+document.body.offsetHeight+"\n" );
+            $( "body" ).append( "g2:"+document.body.scrollHeight+"\n" );
+            $( "body" ).append( "h2:"+document.documentElement.clientHeight+"\n" );
+            $( "body" ).append( "i2:"+document.documentElement.offsetHeight+"\n" );
+            $( "body" ).append( "j2:"+document.documentElement.scrollHeight+"\n" );
+        </script>
+    </body>
+</html>
