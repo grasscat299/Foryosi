@@ -7,6 +7,7 @@
     </head>
     <body>
         <p>windowsize一覧</p>
+        <canvas>
         <script>
             $( "body" ).append( "a2:"+screen.height+"\n" );
             $( "body" ).append( "b2:"+screen.availHeight+"\n" );
@@ -18,6 +19,7 @@
             $( "body" ).append( "h2:"+document.documentElement.clientHeight+"\n" );
             $( "body" ).append( "i2:"+document.documentElement.offsetHeight+"\n" );
             $( "body" ).append( "j2:"+document.documentElement.scrollHeight+"\n" );
+            $( "bpdy" ).css( {"background-color": "brack", "height":window.innerHeight, "widht":100 });
         </script>
     </body>
 </html>
