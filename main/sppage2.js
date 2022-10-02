@@ -4,7 +4,7 @@ function page(){
     console.log( "zoom", $( "body" ).css( "zoom" ) );
     console.log( "y", document.documentElement.clientHeight );
     //$( "body" ).css( { "width": document.body.clientWidth, "height" : document.documentElement.clientHeight } );
-    $( "body" ).css( { "width": screen.width, "height" : screen.height } );
+    $( "body" ).css( { "width": screen.width, "height" : document.body.clientHeight } );
     //$( "body" )[0].width = screen.width;
     //$( "body" )[0].width = screen.height;
     console.log( "page {" );
