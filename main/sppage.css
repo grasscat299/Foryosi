@@ -9,10 +9,11 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+    overflow: scroll;
 }
 
 html,body{
-    //overflow: hidden
+    //overflow: hidden;
 }
 
 #tmctxm{
