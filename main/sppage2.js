@@ -46,7 +46,7 @@ function page(){
     home.style.height = wx*2+"px";
     btn5.height = wx*2;
     $( "#tm" ).css( {"top":wx*2} );
-    $( "#pm" ).css( {"width":screen.width, "height":screen.height-wx*2-wy*2-wx } );
+    $( "#pm" ).css( {"width":screen.width, "height":window.innerHeight-wx*2-wy*2-wx } );
     $( "#pm" ).css( "top",wx*3+wy*2 );
     homemenu.style.width = wi/3+"px";
     homemenu.style.height = document.documentElement.clientHeight+"px";
