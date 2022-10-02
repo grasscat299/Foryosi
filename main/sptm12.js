@@ -489,6 +489,10 @@ function drowts(){
             log[log.length]='(tm12.js)'+'dai'+dai+'ls'+ls+'title'+title;
             let a = setarea( tp );
             console.log( "a", a );
+	    if( a == "t" ){
+                setdai();
+                drow( tcvs, gettime(nd, "data") );
+            }
             log[log.length]='(tm12.js)'+'a'+a;
             
         }else if( tp == 192 ){
