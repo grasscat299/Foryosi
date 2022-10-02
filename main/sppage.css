@@ -106,6 +106,7 @@ html,body{
     zoom: 1;
     transform-origin: top left;
     transform: scale(1);
+    border:1px solid #000;
 }
 
 .txtf_c{
