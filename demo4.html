@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            div{
+                width: 300px;
+                overflow-x: scroll;
+                border: solid 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="button" id="maru">
+        <p>test</p>
+    </body>
+</html>
+<script>
+    let num=0;
+    let cvs = document.getElementById( "maru" );
+    $( function(){
+        
+        $( "#maru" ).click( function(){
+            $("p").text(num)
+            num++;
+        });
+    });
+</script>
